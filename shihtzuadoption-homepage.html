@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shih Tzu Adoption Page</title>
+  </head>
+  <style>
+    body,
+    nav {
+      width: 100%;
+    }
+    body {
+      margin: 0 auto;
+      background: linear-gradient(to right, #868f96 0%, #596164 100%);
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .container-for-content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .home-tab,
+    .background-tab,
+    .contact-tab,
+    .adopt-shih-tzu-button,
+    .designer-credits {
+      transition: all 300ms ease-in-out;
+    }
+    .home-tab,
+    .background-tab,
+    .contact-tab {
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 80px;
+      border-radius: 3px;
+    }
+    .home-tab,
+    .background-tab {
+      margin-right: 5px;
+      padding: 7px 7px 7px 12px;
+    }
+    .home-tab {
+      margin-left: 10px;
+    }
+    .contact-tab {
+      padding: 7px 10px 7px 12px;
+    }
+    .home-link,
+    .background-link,
+    .contact-link,
+    .first-heading,
+    .more-love-text,
+    .adopt-shih-tzu-button {
+      color: black;
+    }
+    .home-link,
+    .background-link,
+    .contact-link,
+    .designer-credits-link {
+      text-decoration: none;
+    }
+    .container-for-image {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+    .shih-tzu-img {
+      width: 1065px;
+      height: 712px;
+      background-color: hsl(0, 0%, 90%);
+    }
+    .first-heading,
+    .more-love-text,
+    .container-for-button {
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .first-heading {
+      top: 45%;
+      font-size: 50px;
+    }
+    .more-love-text {
+      top: 55%;
+      font-size: 22px;
+    }
+    .container-for-button {
+      top: 65%;
+    }
+    .adopt-shih-tzu-button {
+      padding: 18px 36px;
+      border: none;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+      background: linear-gradient(
+        to top,
+        #c4c5c7 0%,
+        #dcdddf 52%,
+        #ebebeb 100%
+      );
+      font-size: 15px;
+    }
+    .designer-credits {
+      text-align: right;
+      margin-top: 20x;
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+    .designer-credits-link {
+      color: #aaaaaa;
+      font-style: italic;
+      font-size: 10px;
+      opacity: 0.9;
+    }
+    .home-tab:hover,
+    .background-tab:hover,
+    .contact-tab:hover,
+    .adopt-shih-tzu-button:hover,
+    .designer-credits-link:hover {
+      cursor: pointer;
+    }
+    .home-tab:hover,
+    .background-tab:hover,
+    .contact-tab:hover {
+      background: #aaaaaa;
+      opacity: 0.8;
+    }
+    .adopt-shih-tzu-button:hover {
+      background: radial-gradient(
+        circle at 0% 0.5%,
+        rgb(241, 241, 242) 0.1%,
+        rgb(224, 226, 228) 100.2%
+      );
+      box-shadow: inset 0 0 0 10em rgba(#eaebec, 0.6);
+    }
+    .designer-credits-link:hover {
+      color: #fafafa;
+      opacity: 0.9;
+    }
+  </style>
+
+  <body>
+    <div class="container-for-content">
+      <nav>
+        <label class="home-tab">
+          <a
+            href="http://127.0.0.1:5500/SheCodesFinalProject/shihtzuadoption-homepage.html"
+            target="_parent"
+            class="home-link"
+          >
+            Home
+          </a>
+        </label>
+        <label class="background-tab">
+          <a
+            href="http://127.0.0.1:5500/SheCodesFinalProject/shihtzuadoption-backgroundpage.HTML"
+            target="_parent"
+            class="background-link"
+          >
+            Background
+          </a>
+        </label>
+
+        <label class="contact-tab">
+          <a
+            href="http://127.0.0.1:5500/SheCodesFinalProject/shihtzuadoption-contactpage.html"
+            target="_parent"
+            class="contact-link"
+          >
+            Contact
+          </a>
+        </label>
+      </nav>
+
+      <div class="container-for-image">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/618/original/shih_tzu_with_owner.jpg?1683917541
+ "
+          alt="shih-tzu-with-owner"
+          class="shih-tzu-img"
+        />
+
+        <h1 class="first-heading">Adopt a Shih Tzu Near You</h1>
+
+        <p class="more-love-text">Add more love to your life</p>
+        <div class="container-for-button">
+          <button class="adopt-shih-tzu-button">Start Today</button>
+        </div>
+        <p class="designer-credits">
+          <a
+            href="https://gist.github.com/samanthabunker33"
+            target="_blank  "
+            class="designer-credits-link"
+          >
+            This page was built by Samantha Bunker
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function canApply() {
+        let age = prompt("What is your age?");
+        return age >= 18;
+      }
+
+      function apply() {
+        alert(
+          "Welcome! Let us help you get started towards meeting your future companion 🐶"
+        );
+        let name = prompt("What is your name?");
+
+        if (canApply()) {
+          let location = prompt("Where are you located (city, state)?");
+          let distance = prompt(
+            "How far are you willing to travel from your city?"
+          );
+          let email = prompt("What is your email?");
+          alert(
+            `Thank you for the information ${name}! Someone from our team will send an email to ${email} in 1-2 buisness days 🐶`
+          );
+        } else {
+          alert(
+            `We're sorry ${name}, applicants must be 18 years or older to adopt from our page.`
+          );
+        }
+      }
+
+      let adoptButton = document.querySelector(".adopt-shih-tzu-button");
+      adoptButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
